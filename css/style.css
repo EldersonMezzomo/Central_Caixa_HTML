@@ -1,0 +1,82 @@
+:root {
+    --cor-principal-dark-azul: #005ca9;
+    --cor-principal-dark-laranja: #f57700;
+    --cor-principal-light-branco: #ffffff;
+    --cor-secundaria-light-azul: #277db6;
+
+    --font-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+    color: var(--cor-principal-dark-azul);
+    background-color: var(--cor-principal-light-branco);
+    @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@700&display=swap');
+}
+
+.cabecalho {
+    position: ;
+    top: 0;
+}
+
+.titulo_cabecalho {
+    color: var(--cor-principal-light-branco);
+    background-color: var(--cor-principal-dark-azul);
+    padding: 1rem;
+    font-family: var(--font-principal);
+    font-size: 18;
+}
+
+.paragrafo {
+    color: var(--cor-principal-light-branco);
+    background-color: var(--cor-principal-dark-laranja);
+    padding: 1rem;
+    font-family: var(--font-principal);
+    font-size: 14;
+}
+.conteudo_principal{
+    display: grid;
+}
+
+.conteudo_principal_apps, .conteudo_principal_sites {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px;
+    row-gap: 24px;
+    column-gap: 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+    }
+    
+.elemento_do_conteudo {
+    display: flex;
+}
+
+.elemento_link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+}
+
+.img_elemento_link {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.texto_elemento_link {
+    font-family: var(--font-principal);
+    color: var(--cor-principal-dark-azul);
+    padding: 8px;
+    text-align: center;
+    
+   
+}
