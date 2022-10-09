@@ -1,0 +1,27 @@
+:root {
+    --cor-principal-dark-azul: #005ca9;
+    --cor-principal-dark-laranja: #f57700;
+    --cor-principal-light-branco: #ffffff;
+    --cor-secundaria-light-azul: #277db6;
+    --cor-sombra: #00000050;
+    --font-principal: 'Inter', sans-serif;
+
+    /*@font-face {
+        font-family: 'icones';
+        src: url(css/font/icones.ttf);
+    }*/
+}
+
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@700&display=swap');
+    background-color: var(--cor-principal-light-branco);
+    color: var(--cor-principal-dark-azul);
+    display: block;
+    padding-top: 80px;
+}
+
+@media (min-width: 720px) {
+    body {
+        padding-top: 160px; 
+    }
+}
