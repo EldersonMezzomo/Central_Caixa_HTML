@@ -1,0 +1,8 @@
+.cabecalho__menu__btn__apps {
+    color: var(--coral-dark-azul);
+    background-color: var(--cor-principal-light-branco);
+    border-top-right-radius: 8px;
+    box-shadow: 2px -2px 2px var(--cor-sombra);
+    font-weight: bold;
+    margin-right: 8px;
+}

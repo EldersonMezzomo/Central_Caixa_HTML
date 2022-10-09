@@ -1,0 +1,15 @@
+.conteudoPrincipal__elemento__link {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    width: 62px;
+}
+
+@media (min-width: 720px) {
+    
+    .conteudoPrincipal__elemento__link {
+        width: 124px;
+    }
+}

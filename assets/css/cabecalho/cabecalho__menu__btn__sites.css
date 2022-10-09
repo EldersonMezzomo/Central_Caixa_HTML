@@ -1,0 +1,5 @@
+.cabecalho__menu__btn__sites {
+    background-color: var(--cor-secundaria-light-azul);
+    border-top-left-radius: 8px;
+    /*box-shadow: -2px -2px 2px var(--cor-sombra);*/
+}

@@ -1,0 +1,13 @@
+.conteudoPrincipal__elemento__link__img {
+    border-radius: 8px;
+    height: 48px;
+    width: 48px;
+}
+
+@media (min-width: 720px) {
+
+    .conteudoPrincipal__elemento__link__img {
+        width: 96px;
+        height: 96px;
+    }    
+}

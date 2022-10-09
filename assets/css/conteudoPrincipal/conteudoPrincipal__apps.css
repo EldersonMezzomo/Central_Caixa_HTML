@@ -1,0 +1,9 @@
+.conteudoPrincipal__apps {
+    align-items: flex-start;
+    column-gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 24px;
+    row-gap: 24px;
+}

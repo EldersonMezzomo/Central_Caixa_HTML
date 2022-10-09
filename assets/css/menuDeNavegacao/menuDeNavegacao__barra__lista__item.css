@@ -1,0 +1,19 @@
+.menuDeNavegacao__barra__lista__item {
+    color: var(--cor-principal-light-branco);
+    font-family: var(--font-principal);
+    font-size: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+}
+
+.menuDeNavegacao__barra__lista__item:hover {
+    background: var(--cor-secundaria-light-azul);
+    cursor: pointer;
+}
+
+/*teste: enviar para JS*/
+.ativo {
+    font-weight: bold;
+}

@@ -1,0 +1,6 @@
+.menuDeNavegacao__barra {
+    background-color: var(--cor-principal-dark-azul);
+    box-shadow: 0px -4px 4px var(--cor-sombra);
+    display: flex;
+    height: 55px;
+}
