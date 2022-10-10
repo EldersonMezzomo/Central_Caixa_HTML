@@ -1,7 +1,17 @@
-.conteudoPrincipal__apps {
+.conteudoPrincipal__apps--ativo {
     align-items: flex-start;
     column-gap: 8px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 24px;
+    row-gap: 24px;
+}
+
+.conteudoPrincipal__apps--inativo {
+    align-items: flex-start;
+    column-gap: 8px;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 24px;

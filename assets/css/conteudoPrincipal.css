@@ -1,7 +1,4 @@
-.conteudoPrincipal{
+.conteudoPrincipal {
     display: grid;
+    padding-bottom: 55px;
 }
- /*.conteudo_principal .conteudo_principal_apps:nth-child(1) {
-        grid-column: 1/2;
-        grid-row: 1/2;
- }*/

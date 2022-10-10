@@ -1,8 +1,15 @@
-.cabecalho__menu__btn__apps {
-    color: var(--coral-dark-azul);
+.cabecalho__menu__btn__apps--ativo {
+    color: var(--cor-principal-dark-azul);
     background-color: var(--cor-principal-light-branco);
     border-top-right-radius: 8px;
     box-shadow: 2px -2px 2px var(--cor-sombra);
     font-weight: bold;
+    margin-right: 8px;
+}
+
+.cabecalho__menu__btn__apps--inativo {
+    color: var(--cor-principal-light-branco);
+    background-color: var(--cor-secundaria-light-azul);
+    border-top-right-radius: 8px;
     margin-right: 8px;
 }

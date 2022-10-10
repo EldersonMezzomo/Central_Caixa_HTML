@@ -2,7 +2,7 @@
 
 /*alert('Teste 1'); /*inserindo alerta*/
 
-/*document.getElementById("teste").innerHTML="Teste 2"; /*inserindo HTML*/
+/*document.getElementById("tag id").innerHTML="Teste 2"; /*inserindo HTML*/
 
 /*document.write('Teste 3'); /*mais utilizado para testes*/
 
@@ -33,10 +33,25 @@ let = não permite re-declarar=alterar, mas funciona com valor diferente dentro 
 
 */
 
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
+/*
+function nomeDaFuncao (valor1, valor2) {return valor1 + valor 2;}
+
+pode jogar dentro de um HTML:
+document.getElementById("tag id").innerHTML= soma(10, 20);
+
+ou jogar dentro de uma variável:
+var total = soma (10, 23);
+
+OBJETO
+const carro = {
+    marca: "ford", 
+    modelo:"ka", 
+    buzina: function () { alert('biiii")}
+};
+
+EVENTOS:
+ver video:
+https://www.youtube.com/watch?v=rwJ2bwsjGhQ&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw&index=10
+
+
+*/

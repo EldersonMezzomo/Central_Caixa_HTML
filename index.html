@@ -38,11 +38,11 @@
             <h1 class="cabecalho__titulo">Central<strong id="caixa">&nbspCAIXA</strong></h1>
 
             <div class="cabecalho__menu">
-                <button class="cabecalho__menu__btn__apps cabecalho__menu__btn">
+                <button id="btn__apps" class="cabecalho__menu__btn__apps--ativo cabecalho__menu__btn">
                     <p class="paragrafo">Apps</p>
                 </button>
 
-                <button class="cabecalho__menu__btn__sites cabecalho__menu__btn">
+                <button id="btn__sites" class="cabecalho__menu__btn__sites--inativo cabecalho__menu__btn">
                     <p class="paragrafo">Sites e Redes Sociais</p>
                 </button>
 
@@ -54,7 +54,7 @@
     <!--CONTEÚDO PRINCIPAL-->
     <section class="conteudoPrincipal">
 
-        <section class="conteudoPrincipal__apps">
+        <section class="conteudoPrincipal__apps--ativo" id="conteudoPrincipal__apps">
             <div class="conteudoPrincipal__elemento">
                 <a class="conteudoPrincipal__elemento__link" href="https://play.google.com/store/apps/details?id=br.com.gabba.Caixa">
                     <img class="conteudoPrincipal__elemento__link__img" src="assets/img/apps/app_1caixa.png" alt="Imagem do app Caixa" />
@@ -214,7 +214,7 @@
             </div>
         </section>
 
-        <section class="conteudoPrincipal__sites">
+        <section class="conteudoPrincipal__sites--inativo" id="conteudoPrincipal__sites">
 
             <div class="conteudoPrincipal__elemento">
                 <a class="conteudoPrincipal__elemento__link" href="http://api.whatsapp.com/send?1=pt_BR&phone=5508001040104">
@@ -367,6 +367,7 @@
     </section>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/cabecalho__menu__btn.js"></script>
 </body>
 
 </html>
