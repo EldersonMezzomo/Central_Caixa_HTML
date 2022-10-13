@@ -1,0 +1,13 @@
+.cabecalho__menu__btn__voltar--ativo {
+    align-items: center;
+    color: var(--cor-principal-light-branco);
+    background-color: var(--cor-principal-dark-azul);
+    border: none;
+    display: flex;
+    font-weight:lighter ;
+    margin-right: 8px;
+}
+
+.cabecalho__menu__btn__voltar--inativo {
+    display: none;
+    }

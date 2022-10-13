@@ -1,3 +1,16 @@
+/*BOTÃO VOLTAR*/
+const btn__apps__voltar = document.getElementById("btn__voltar");
+
+btn__apps__voltar.addEventListener("click", function() {
+  if (document.querySelector('#btn__voltar').classList.contains("cabecalho__menu__btn__voltar--ativo")) {
+    document.querySelector('#btn__voltar').classList.remove("cabecalho__menu__btn__voltar--ativo");
+    document.querySelector('#btn__voltar').classList.add("cabecalho__menu__btn__voltar--inativo");
+     
+  } else {}
+});
+
+
+/*BOTÃO APPS*/
 const btn__apps__variavel = document.getElementById("btn__apps");
 
 btn__apps__variavel.addEventListener("click", function() {
@@ -14,6 +27,7 @@ btn__apps__variavel.addEventListener("click", function() {
   } else {}
 });
 
+/*BOTÃO SITES*/
 const btn__sites__variavel = document.getElementById("btn__sites");
 
 btn__sites__variavel.addEventListener("click", function() {

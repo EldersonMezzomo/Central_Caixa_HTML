@@ -1,6 +1,6 @@
 .cabecalho__menu__btn__sites--ativo {
-  color: var(--coral-da--cor-principal-dark-azul);
   background-color: var(--cor-principal-light-branco);
+  color: var(--cor-principal-dark-azul);
   border-top-left-radius: 8px;
   box-shadow: -2px -2px 2px var(--cor-sombra);
   font-weight: bold;

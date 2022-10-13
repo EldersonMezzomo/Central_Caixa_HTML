@@ -1,0 +1,22 @@
+.cabecalho__menu__secundario {
+    align-items: center;
+    background-color: var(--cor-secundaria-light-azul);
+    border: none;
+    color: var(--cor-principal-light-branco);
+    display: flex;
+    flex-grow: 1;
+    font-family: var(--font-principal);
+    font-weight: bold;
+    font-size: 14px;
+    height: 40px;
+    padding-left: 24px;
+    width: 100%;
+}
+
+@media (min-width: 720px) {
+
+.cabecalho__menu__btn {
+        font-size: 28px;
+        height: 80px;
+    }
+}

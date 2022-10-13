@@ -1,4 +1,7 @@
 .cabecalho__menu {
-    background-color: var(--cor-secundaria-light-azul);
+    align-items: center;
+    background-color: var(--cor-principal-dark-azul);
+    color: var(--cor-principal-light-branco);
     display: flex;
+    justify-content:space-between;
 }
