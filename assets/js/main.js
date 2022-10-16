@@ -73,8 +73,16 @@ chamar__inicio.addEventListener("click", function() {
     document.querySelector('#cabecalho__menu__inicio').classList.add("cabecalho__menu__inicio--ativo");
     document.querySelector('#cabecalho__menu__secundario__perfil').classList.remove("cabecalho__menu__secundario__perfil--ativo");
     document.querySelector('#cabecalho__menu__secundario__perfil').classList.add("cabecalho__menu__secundario__perfil--inativo");
+    document.querySelector('#cabecalho__menu__secundario__procurar').classList.remove("cabecalho__menu__secundario__procurar--ativo");
+    document.querySelector('#cabecalho__menu__secundario__procurar').classList.add("cabecalho__menu__secundario__procurar--inativo");
+    document.querySelector('#cabecalho__menu__secundario__comoUsar').classList.remove("cabecalho__menu__secundario__comoUsar--ativo");
+    document.querySelector('#cabecalho__menu__secundario__comoUsar').classList.add("cabecalho__menu__secundario__comoUsar--inativo");
     document.querySelector('#btn__perfil').classList.remove("btn__perfil--ativo");
     document.querySelector('#btn__perfil').classList.add("btn__perfil--inativo");
+    document.querySelector('#btn__procurar').classList.remove("btn__procurar--ativo");
+    document.querySelector('#btn__procurar').classList.add("btn__procurar--inativo");
+    document.querySelector('#btn__comoUsar').classList.remove("btn__comoUsar--ativo");
+    document.querySelector('#btn__comoUsar').classList.add("btn__comoUsar--inativo");
 
     /*alterar conteúdo principal*/
     document.querySelector('#conteudoPrincipal__apps').classList.remove("conteudoPrincipal__apps--inativo");
@@ -83,6 +91,10 @@ chamar__inicio.addEventListener("click", function() {
     document.querySelector('#conteudoPrincipal__sites').classList.add("conteudoPrincipal__sites--inativo");
     document.querySelector('#conteudoPrincipal__perfil').classList.remove("conteudoPrincipal__perfil--ativo");
     document.querySelector('#conteudoPrincipal__perfil').classList.add("conteudoPrincipal__perfil--inativo");
+    document.querySelector('#conteudoPrincipal__procurar').classList.remove("conteudoPrincipal__procurar--ativo");
+    document.querySelector('#conteudoPrincipal__procurar').classList.add("conteudoPrincipal__procurar--inativo");
+    document.querySelector('#conteudoPrincipal__comoUsar').classList.remove("conteudoPrincipal__comoUsar--ativo");
+    document.querySelector('#conteudoPrincipal__comoUsar').classList.add("conteudoPrincipal__comoUsar--inativo");
         
     /*adicionar ou remover botão voltar*/
     document.querySelector('#btn__voltar').classList.remove("cabecalho__menu__btn__voltar--ativo");
@@ -98,8 +110,16 @@ chamar__perfil.addEventListener("click", function () {
         document.querySelector('#cabecalho__menu__inicio').classList.add("cabecalho__menu__inicio--inativo");
         document.querySelector('#cabecalho__menu__secundario__perfil').classList.remove("cabecalho__menu__secundario__perfil--inativo");
         document.querySelector('#cabecalho__menu__secundario__perfil').classList.add("cabecalho__menu__secundario__perfil--ativo");
+        document.querySelector('#cabecalho__menu__secundario__procurar').classList.remove("cabecalho__menu__secundario__procurar--ativo");
+        document.querySelector('#cabecalho__menu__secundario__procurar').classList.add("cabecalho__menu__secundario__procurar--inativo");
+        document.querySelector('#cabecalho__menu__secundario__comoUsar').classList.remove("cabecalho__menu__secundario__comoUsar--ativo");
+        document.querySelector('#cabecalho__menu__secundario__comoUsar').classList.add("cabecalho__menu__secundario__comoUsar--inativo");
         document.querySelector('#btn__perfil').classList.remove("btn__perfil--inativo");
         document.querySelector('#btn__perfil').classList.add("btn__perfil--ativo");
+        document.querySelector('#btn__procurar').classList.remove("btn__procurar--ativo");
+        document.querySelector('#btn__procurar').classList.add("btn__procurar--inativo");
+        document.querySelector('#btn__comoUsar').classList.remove("btn__comoUsar--ativo");
+        document.querySelector('#btn__comoUsar').classList.add("btn__comoUsar--inativo");
         
         /*alterar conteúdo principal*/
         document.querySelector('#conteudoPrincipal__apps').classList.remove("conteudoPrincipal__apps--ativo");
@@ -108,34 +128,88 @@ chamar__perfil.addEventListener("click", function () {
         document.querySelector('#conteudoPrincipal__sites').classList.add("conteudoPrincipal__sites--inativo");
         document.querySelector('#conteudoPrincipal__perfil').classList.remove("conteudoPrincipal__perfil--inativo");
         document.querySelector('#conteudoPrincipal__perfil').classList.add("conteudoPrincipal__perfil--ativo");
-        
+        document.querySelector('#conteudoPrincipal__procurar').classList.remove("conteudoPrincipal__procurar--ativo");
+        document.querySelector('#conteudoPrincipal__procurar').classList.add("conteudoPrincipal__procurar--inativo");
+        document.querySelector('#conteudoPrincipal__comoUsar').classList.remove("conteudoPrincipal__comoUsar--ativo");
+        document.querySelector('#conteudoPrincipal__comoUsar').classList.add("conteudoPrincipal__comoUsar--inativo");
+                
         /*adicionar ou remover botão voltar*/
         document.querySelector('#btn__voltar').classList.remove("cabecalho__menu__btn__voltar--inativo");
         document.querySelector('#btn__voltar').classList.add("cabecalho__menu__btn__voltar--ativo");
       }});
       
-    
-
 /*BOTÃO PROCURAR*/
+const chamar__procurar = document.getElementById("btn__procurar");
+chamar__procurar.addEventListener("click", function () {
+  if (document.querySelector('#btn__procurar').classList.contains("btn__procurar--inativo")) {
+        /*alterar cabeçalho menu secundário e menuDeNavegacao*/
+        document.querySelector('#cabecalho__menu__inicio').classList.remove("cabecalho__menu__inicio--ativo");
+        document.querySelector('#cabecalho__menu__inicio').classList.add("cabecalho__menu__inicio--inativo");
+        document.querySelector('#cabecalho__menu__secundario__perfil').classList.remove("cabecalho__menu__secundario__perfil--ativo");
+        document.querySelector('#cabecalho__menu__secundario__perfil').classList.add("cabecalho__menu__secundario__perfil--inativo");
+        document.querySelector('#cabecalho__menu__secundario__procurar').classList.remove("cabecalho__menu__secundario__procurar--inativo");
+        document.querySelector('#cabecalho__menu__secundario__procurar').classList.add("cabecalho__menu__secundario__procurar--ativo");
+        document.querySelector('#cabecalho__menu__secundario__comoUsar').classList.remove("cabecalho__menu__secundario__comoUsar--ativo");
+        document.querySelector('#cabecalho__menu__secundario__comoUsar').classList.add("cabecalho__menu__secundario__comoUsar--inativo");
+        document.querySelector('#btn__perfil').classList.remove("btn__perfil--ativo");
+        document.querySelector('#btn__perfil').classList.add("btn__perfil--inativo");
+        document.querySelector('#btn__procurar').classList.remove("btn__procurar--inativo");
+        document.querySelector('#btn__procurar').classList.add("btn__procurar--ativo");
+        document.querySelector('#btn__comoUsar').classList.remove("btn__comoUsar--ativo");
+        document.querySelector('#btn__comoUsar').classList.add("btn__comoUsar--inativo");
+        
+        /*alterar conteúdo principal*/
+        document.querySelector('#conteudoPrincipal__apps').classList.remove("conteudoPrincipal__apps--ativo");
+        document.querySelector('#conteudoPrincipal__apps').classList.add("conteudoPrincipal__apps--inativo");
+        document.querySelector('#conteudoPrincipal__sites').classList.remove("conteudoPrincipal__sites--ativo");
+        document.querySelector('#conteudoPrincipal__sites').classList.add("conteudoPrincipal__sites--inativo");
+        document.querySelector('#conteudoPrincipal__perfil').classList.remove("conteudoPrincipal__perfil--ativo");
+        document.querySelector('#conteudoPrincipal__perfil').classList.add("conteudoPrincipal__perfil--inativo");
+        document.querySelector('#conteudoPrincipal__procurar').classList.remove("conteudoPrincipal__procurar--inativo");
+        document.querySelector('#conteudoPrincipal__procurar').classList.add("conteudoPrincipal__procurar--ativo");
+        document.querySelector('#conteudoPrincipal__comoUsar').classList.remove("conteudoPrincipal__comoUsar--ativo");
+        document.querySelector('#conteudoPrincipal__comoUsar').classList.add("conteudoPrincipal__comoUsar--inativo");
+        
+        /*adicionar ou remover botão voltar*/
+        document.querySelector('#btn__voltar').classList.remove("cabecalho__menu__btn__voltar--inativo");
+        document.querySelector('#btn__voltar').classList.add("cabecalho__menu__btn__voltar--ativo");
+      }});
 
-const btn__nav__procurar = document.getElementById("btn__procurar");
-
-btn__nav__procurar.addEventListener("click", function() {
-  if (document.querySelector('#btn__procurar').classList.contains("cabecalho__menu__btn__voltar--ativo")) {
-    document.querySelector('#btn__procurar').classList.remove("cabecalho__menu__btn__voltar--ativo");
-    document.querySelector('#btn__procurar').classList.add("cabecalho__menu__btn__voltar--inativo");
-     
-  } else {}
-});
 
 /*BOTÃO COMO USAR*/
+const chamar__comoUsar = document.getElementById("btn__comoUsar");
+chamar__comoUsar.addEventListener("click", function () {
+  if (document.querySelector('#btn__comoUsar').classList.contains("btn__comoUsar--inativo")) {
+        /*alterar cabeçalho menu secundário e menuDeNavegacao*/
+        document.querySelector('#cabecalho__menu__inicio').classList.remove("cabecalho__menu__inicio--ativo");
+        document.querySelector('#cabecalho__menu__inicio').classList.add("cabecalho__menu__inicio--inativo");
+        document.querySelector('#cabecalho__menu__secundario__perfil').classList.remove("cabecalho__menu__secundario__perfil--ativo");
+        document.querySelector('#cabecalho__menu__secundario__perfil').classList.add("cabecalho__menu__secundario__perfil--inativo");
+        document.querySelector('#cabecalho__menu__secundario__procurar').classList.remove("cabecalho__menu__secundario__procurar--ativo");
+        document.querySelector('#cabecalho__menu__secundario__procurar').classList.add("cabecalho__menu__secundario__procurar--inativo");
+        document.querySelector('#cabecalho__menu__secundario__comoUsar').classList.remove("cabecalho__menu__secundario__comoUsar--inativo");
+        document.querySelector('#cabecalho__menu__secundario__comoUsar').classList.add("cabecalho__menu__secundario__comoUsar--ativo");
+        document.querySelector('#btn__perfil').classList.remove("btn__perfil--ativo");
+        document.querySelector('#btn__perfil').classList.add("btn__perfil--inativo");
+        document.querySelector('#btn__procurar').classList.remove("btn__procurar--ativo");
+        document.querySelector('#btn__procurar').classList.add("btn__procurar--inativo");
+        document.querySelector('#btn__comoUsar').classList.remove("btn__comoUsar--inativo");
+        document.querySelector('#btn__comoUsar').classList.add("btn__comoUsar--ativo");
+        
+        /*alterar conteúdo principal*/
+        document.querySelector('#conteudoPrincipal__apps').classList.remove("conteudoPrincipal__apps--ativo");
+        document.querySelector('#conteudoPrincipal__apps').classList.add("conteudoPrincipal__apps--inativo");
+        document.querySelector('#conteudoPrincipal__sites').classList.remove("conteudoPrincipal__sites--ativo");
+        document.querySelector('#conteudoPrincipal__sites').classList.add("conteudoPrincipal__sites--inativo");
+        document.querySelector('#conteudoPrincipal__perfil').classList.remove("conteudoPrincipal__perfil--ativo");
+        document.querySelector('#conteudoPrincipal__perfil').classList.add("conteudoPrincipal__perfil--inativo");
+        document.querySelector('#conteudoPrincipal__procurar').classList.remove("conteudoPrincipal__procurar--ativo");
+        document.querySelector('#conteudoPrincipal__procurar').classList.add("conteudoPrincipal__procurar--inativo");
+        document.querySelector('#conteudoPrincipal__comoUsar').classList.remove("conteudoPrincipal__comoUsar--inativo");
+        document.querySelector('#conteudoPrincipal__comoUsar').classList.add("conteudoPrincipal__comoUsar--ativo");
+        
+        /*adicionar ou remover botão voltar*/
+        document.querySelector('#btn__voltar').classList.remove("cabecalho__menu__btn__voltar--inativo");
+        document.querySelector('#btn__voltar').classList.add("cabecalho__menu__btn__voltar--ativo");
+      }});
 
-const btn__nav__comoUsar = document.getElementById("btn__comoUsar");
-
-btn__nav__comoUsar.addEventListener("click", function() {
-  if (document.querySelector('#btn__comoUsar').classList.contains("cabecalho__menu__btn__voltar--ativo")) {
-    document.querySelector('#btn__comoUsar').classList.remove("cabecalho__menu__btn__voltar--ativo");
-    document.querySelector('#btn__comoUsar').classList.add("cabecalho__menu__btn__voltar--inativo");
-     
-  } else {}
-});

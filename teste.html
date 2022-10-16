@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reunindo em um só lugar app's, sites e redes sociais CAIXA.">
+    <meta name="keywords" content="Caixa, app, sites, redes sociais">
+    <meta name="author" content="Elderson Luciano Mezzomo">
+
+    <title>Central CAIXA</title>
+
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/cabecalho.css" rel="stylesheet">
+    <link href="assets/css/cabecalho/cabecalho__titulo.css" rel="stylesheet">
+    <link href="assets/css/cabecalho/cabecalho__menu.css" rel="stylesheet">
+    <link href="assets/css/cabecalho/cabecalho__menu__btn.css" rel="stylesheet">
+    <link href="assets/css/cabecalho/cabecalho__menu__btn__apps.css" rel="stylesheet">
+    <link href="assets/css/cabecalho/cabecalho__menu__btn__sites.css" rel="stylesheet">
+    <link href="assets/css/cabecalho/cabecalho__menu__secundario.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__apps.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__sites.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__perfil.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__procurar.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__comoUsar.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link__img.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link__txt.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/menuDeNavegacao.css" rel="stylesheet">
+    <link href="assets/css/menuDeNavegacao/menuDeNavegacao__barra.css" rel="stylesheet">
+    <link href="assets/css/menuDeNavegacao/menuDeNavegacao__barra__lista.css" rel="stylesheet">
+    <link href="assets/css/menuDeNavegacao/menuDeNavegacao__barra__lista__item.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--CABEÇALHO-->
+    <header class="cabecalho">
+        <nav>
+            <div class="cabecalho__menu">
+                <h1 class="cabecalho__titulo">Central<strong id="caixa">&nbspCAIXA</strong></h1>
+                <button id="btn__voltar" class="cabecalho__menu__btn__voltar--ativo"><br>Voltar&nbsp&nbsp<span class="material-icons">&#xE5e0;</span></button>
+                <!--botão voltar
+                <input type="button" value="Voltar" onClick="history.go(-1)">
+                -->
+            </div><!--MENU SECUNDÁRIO-->
+                <div id="cabecalho__menu__inicio" class="cabecalho__menu cabecalho__menu__inicio--inativo">
+                    <button id="btn__apps" class="cabecalho__menu__btn__apps--ativo cabecalho__menu__btn">
+                        <p class="paragrafo">Apps</p>
+                    </button>
+                    <button id="btn__sites" class="cabecalho__menu__btn__sites--inativo cabecalho__menu__btn">
+                        <p class="paragrafo">Sites e Redes Sociais</p>
+                    </button>
+                </div>
+                <h2 id="cabecalho__menu__secundario__perfil" class="cabecalho__menu__secundario__perfil--inativo">Meu Perfil</h2>
+                <h2 id="cabecalho__menu__secundario__procurar" class="cabecalho__menu__secundario__procurar--ativo">Procurar</h2>
+                <h2 id="cabecalho__menu__secundario__comoUsar" class="cabecalho__menu__secundario__comoUsar--inativo">Como usar?</h2>
+        </nav>
+    </header>
+
+    <!--CONTEÚDO PRINCIPAL-->
+    <section class="conteudoPrincipal">
+
+        <section  class="conteudoPrincipal__procurar--inativo" id="conteudoPrincipal__procurar">
+            <p class="conteudoPrincipal__procurar__titulo"><span class="material-icons">&#xEa3c;</span></p>
+            <p class="conteudoPrincipal__procurar__titulo">Em construção</p>
+        </section>
+
+        <section  class="conteudoPrincipal__comoUsar--ativo" id="conteudoPrincipal__comoUsar">
+            <p class="conteudoPrincipal__comoUsar__titulo"><span class="material-icons">&#xEa3c;</span></p>
+            <p class="conteudoPrincipal__comoUsar__titulo">Em construção</p>
+        </section>
+        
+<!--
+        
+        <section  class="conteudoPrincipal__webview--inativo" id="conteudoPrincipal__webview">
+            <p class="conteudoPrincipal__perfil__titulo">Página da Internet</p>
+            <p class="conteudoPrincipal__perfil__titulo"><span class="material-icons">&#xEa3c;</span>Em construção</p>
+        </section>
+-->
+    </section>
+
+    <!--MENU DE NAVEGAÇÃO-->
+    <section class="menuDeNavegacao">
+        <nav class="menuDeNavegacao__barra">
+            <ul class="menuDeNavegacao__barra__lista">
+                <li ><button id="btn__inicio" class="menuDeNavegacao__barra__lista__item btn__inicio--inativo"><span class="material-icons">&#xE88A;</span><br>Início</button></li>
+                <li ><button id="btn__perfil" class="menuDeNavegacao__barra__lista__item btn__perfil--inativo"><span class="material-icons">&#xE7fd;</span><br>Perfil</button></li>
+                <li ><button id="btn__procurar" class="menuDeNavegacao__barra__lista__item btn__procurar--inativo"><span class="material-icons">&#xE8b6;</span><br>Procurar</button></li>
+                <li ><button id="btn__comoUsar" class="menuDeNavegacao__barra__lista__item btn__comoUsar--inativo"><span class="material-icons">&#xE887;</span><br>Como usar?</button></li>
+            </ul>
+        </nav>        
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+            
+            <!--<div class="conteudoPrincipal__elemento">
+                <h2><a href="index.html"><span class="material-icons">&#xEa3c;</span><br>Em construção</a></h2>
+                -->
+                <!--<a class="conteudoPrincipal__elemento__link" href="index.html">
+                    <img class="conteudoPrincipal__elemento__link__img" src="assets/img/apps/app_1caixa.png"/>
+                    <h3 class="conteudoPrincipal__elemento__link__txt">Início</h3>
+                </a>
+            </div>-->
+        
+<!--TESTAR ABERTURA DE FACEBOOK
+    <a href="intent://profile/100030940759382#Intent;package=com.facebook.katana;scheme=fb;end">Facebook</a> 
+-->
+
+<!--FUNCIONOU PARA REDIRECIONAR: TESTAR ABRIR APP
+    <script>
+        window.location.replace("caixa://home/"); setTimeout(function () {
+        window.location.replace("https://play.google.com/store/apps/details?id=br.gov.caixa.tem"); }, 2000);
+    </script>
+-->

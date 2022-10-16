@@ -15,6 +15,41 @@
 .cabecalho__menu__secundario__perfil--inativo {
     display: none;
 }
+
+.cabecalho__menu__secundario__procurar--ativo{
+    align-items: center;
+    background-color: var(--cor-secundaria-light-azul);
+    border: none;
+    color: var(--cor-principal-light-branco);
+    display: flex;
+    flex-grow: 1;
+    font-family: var(--font-principal);
+    font-weight: bold;
+    font-size: 14px;
+    height: 40px;
+    padding-left: 24px;
+    width: 100%;
+}
+.cabecalho__menu__secundario__procurar--inativo{
+    display: none;}
+
+.cabecalho__menu__secundario__comoUsar--ativo{
+    align-items: center;
+    background-color: var(--cor-secundaria-light-azul);
+    border: none;
+    color: var(--cor-principal-light-branco);
+    display: flex;
+    flex-grow: 1;
+    font-family: var(--font-principal);
+    font-weight: bold;
+    font-size: 14px;
+    height: 40px;
+    padding-left: 24px;
+    width: 100%;
+    }
+
+.cabecalho__menu__secundario__comoUsar--inativo{display: none;}
+
 .cabecalho__menu__inicio--ativo{
     display: flex;
 }
