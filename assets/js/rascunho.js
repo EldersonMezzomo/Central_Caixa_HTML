@@ -11,6 +11,7 @@
 /*let a,b,c; a=5; b=6; c=8;*//*declaração de variável*/
 
 /*function minhafuncao(){document.write(5 + 5);}*/
+
 /*declarações em bloco de códigos*/
 
 /*SINTAXE*/
@@ -18,7 +19,6 @@
 /*tipos de dados=dentro de aspas duplas "" entendido como texto=string
 "case sensitive"
 */
-
 
 /*variáveis= var let const
 
@@ -28,8 +28,6 @@ var primeiroResultado = a + b;
 console.log(primeiroResultado);
 
 let = não permite re-declarar=alterar, mas funciona com valor diferente dentro de um escopo (bloco);
-
-
 
 */
 

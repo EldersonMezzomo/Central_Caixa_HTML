@@ -5,6 +5,10 @@
     justify-content: center;
     text-decoration: none;
     width: 62px;
+    
+    /**teste do botão abrir app*/
+    border: none;
+    background-color: var(--cor-principal-light-branco);
 }
 
 @media (min-width: 720px) {

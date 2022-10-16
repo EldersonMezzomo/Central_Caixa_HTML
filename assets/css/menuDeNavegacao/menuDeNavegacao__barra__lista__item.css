@@ -21,7 +21,8 @@
     cursor: pointer;
 }
 
-/*teste: enviar para JS*/
-.ativo {
-    font-weight: bold;
-}
+
+.btn__inicio--ativo{font-weight: bold;}
+.btn__perfil--ativo{font-weight: bold;}
+.btn__procurar--ativo{font-weight: bold;}
+.btn__comoUsar--ativo{font-weight: bold;}
