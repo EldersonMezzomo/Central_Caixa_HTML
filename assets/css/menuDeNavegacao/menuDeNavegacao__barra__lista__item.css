@@ -1,20 +1,21 @@
 .menuDeNavegacao__barra__lista__item {
+    align-items: center;
     color: var(--cor-principal-light-branco);
+    background-color: var(--cor-principal-dark-azul);
+    border: none;
     display: flex;
+    flex-direction: column;
     font-family: var(--font-principal);
     font-size: 12px;
+    font-weight:lighter;
+    justify-content: center;
     padding-left: 24px;
     padding-right: 24px;
-    text-decoration: none;
-    
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    justify-content: center;
-    
+    text-decoration: none;
     transition: all .1s ease-in-out;
 }
-
+    
 .menuDeNavegacao__barra__lista__item:hover {
     background: var(--cor-secundaria-light-azul);
     cursor: pointer;

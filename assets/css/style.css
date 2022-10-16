@@ -14,10 +14,13 @@
 
 body {
     @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@700&display=swap');
+    
     background-color: var(--cor-principal-light-branco);
     color: var(--cor-principal-dark-azul);
     display: block;
     padding-top: 80px;
+    min-height: 100vh;
+    width: 100%;
 }
 
 @media (min-width: 720px) {

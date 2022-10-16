@@ -13,26 +13,26 @@
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/cabecalho.css" rel="stylesheet">
-    <link href="assets/css/cabecalho/cabecalho__titulo.css" rel="stylesheet">
-    <link href="assets/css/cabecalho/cabecalho__menu.css" rel="stylesheet">
-    <link href="assets/css/cabecalho/cabecalho__menu__btn.css" rel="stylesheet">
-    <link href="assets/css/cabecalho/cabecalho__menu__btn__voltar.css" rel="stylesheet">
-    <link href="assets/css/cabecalho/cabecalho__menu__btn__apps.css" rel="stylesheet">
-    <link href="assets/css/cabecalho/cabecalho__menu__btn__sites.css" rel="stylesheet">
-    <link href="assets/css/cabecalho/cabecalho__menu__secundario.css" rel="stylesheet">
+        <link href="assets/css/cabecalho/cabecalho__titulo.css" rel="stylesheet">
+        <link href="assets/css/cabecalho/cabecalho__menu.css" rel="stylesheet">
+        <link href="assets/css/cabecalho/cabecalho__menu__btn.css" rel="stylesheet">
+        <link href="assets/css/cabecalho/cabecalho__menu__btn__voltar.css" rel="stylesheet">
+        <link href="assets/css/cabecalho/cabecalho__menu__btn__apps.css" rel="stylesheet">
+        <link href="assets/css/cabecalho/cabecalho__menu__btn__sites.css" rel="stylesheet">
+        <link href="assets/css/cabecalho/cabecalho__menu__secundario.css" rel="stylesheet">
     <link href="assets/css/conteudoPrincipal.css" rel="stylesheet">
-    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__apps.css" rel="stylesheet">
-    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__sites.css" rel="stylesheet">
-    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento.css" rel="stylesheet">
-    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link.css" rel="stylesheet">
-    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link__img.css" rel="stylesheet">
-    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link__txt.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+        <link href="assets/css/conteudoPrincipal/conteudoPrincipal__apps.css" rel="stylesheet">
+        <link href="assets/css/conteudoPrincipal/conteudoPrincipal__sites.css" rel="stylesheet">
+        <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento.css" rel="stylesheet">
+        <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link.css" rel="stylesheet">
+        <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link__img.css" rel="stylesheet">
+        <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link__txt.css" rel="stylesheet">
+        <link href="assets/css/conteudoPrincipal/conteudoPrincipal__perfil.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/css/menuDeNavegacao.css" rel="stylesheet">
-    <link href="assets/css/menuDeNavegacao/menuDeNavegacao__barra.css" rel="stylesheet">
-    <link href="assets/css/menuDeNavegacao/menuDeNavegacao__barra__lista.css" rel="stylesheet">
-    <link href="assets/css/menuDeNavegacao/menuDeNavegacao__barra__lista__item.css" rel="stylesheet">
+        <link href="assets/css/menuDeNavegacao/menuDeNavegacao__barra.css" rel="stylesheet">
+        <link href="assets/css/menuDeNavegacao/menuDeNavegacao__barra__lista.css" rel="stylesheet">
+        <link href="assets/css/menuDeNavegacao/menuDeNavegacao__barra__lista__item.css" rel="stylesheet">
 </head>
 
 <body>
@@ -42,18 +42,19 @@
             <div class="cabecalho__menu">
                 <h1 class="cabecalho__titulo">Central<strong id="caixa">&nbspCAIXA</strong></h1>
                 <button id="btn__voltar" class="cabecalho__menu__btn__voltar--inativo"><br>Voltar&nbsp&nbsp<span class="material-icons">&#xE5e0;</span></button>
-            </div>
-            <div class="cabecalho__menu">
-                <button id="btn__apps" class="cabecalho__menu__btn__apps--ativo cabecalho__menu__btn">
-                    <p class="paragrafo">Apps</p>
-                </button>
-
-                <button id="btn__sites" class="cabecalho__menu__btn__sites--inativo cabecalho__menu__btn">
-                    <p class="paragrafo">Sites e Redes Sociais</p>
-                </button>
-
-            </div>
-
+                <!--botão voltar
+                <input type="button" value="Voltar" onClick="history.go(-1)">
+                -->
+            </div><!--MENU SECUNDÁRIO-->
+                <div id="cabecalho__menu__inicio" class="cabecalho__menu cabecalho__menu__inicio--ativo">
+                    <button id="btn__apps" class="cabecalho__menu__btn__apps--ativo cabecalho__menu__btn">
+                        <p class="paragrafo">Apps</p>
+                    </button>
+                    <button id="btn__sites" class="cabecalho__menu__btn__sites--inativo cabecalho__menu__btn">
+                        <p class="paragrafo">Sites e Redes Sociais</p>
+                    </button>
+                </div>
+                <h2 id="cabecalho__menu__secundario__perfil" class="cabecalho__menu__secundario__perfil--ativo">Meu Perfil</h2>
         </nav>
     </header>
 
@@ -218,6 +219,12 @@
                     <h3 class="conteudoPrincipal__elemento__link__txt">Youse</h3>
                 </a>
             </div>
+            <div class="conteudoPrincipal__elemento">
+                <a class="conteudoPrincipal__elemento__link" href="perfil.html">
+                    <img class="conteudoPrincipal__elemento__link__img" src="assets/img/apps/app_1caixa.png"/>
+                    <h3 class="conteudoPrincipal__elemento__link__txt">Perfil</h3>
+                </a>
+            </div>
         </section>
 
         <section class="conteudoPrincipal__sites--inativo" id="conteudoPrincipal__sites">
@@ -261,6 +268,13 @@
                 <a class="conteudoPrincipal__elemento__link" href="https://www.youtube.com/canalcaixa">
                     <img class="conteudoPrincipal__elemento__link__img" src="assets/img/sites/app_youtube.png" alt="Imagem do app Caixa" />
                     <h3 class="conteudoPrincipal__elemento__link__txt">YouTube</h3>
+                </a>
+            </div>
+
+            <div class="conteudoPrincipal__elemento">
+                <a class="conteudoPrincipal__elemento__link" href="https://www.caixacultural.com.br/Paginas/default.aspx">
+                    <img class="conteudoPrincipal__elemento__link__img" src="assets/img/sites/site_caixa_cultural.png" alt="Imagem do site Caixa Cultural"/>
+                    <h3 class="conteudoPrincipal__elemento__link__txt">Caixa Cultural</h3>
                 </a>
             </div>
 
@@ -358,22 +372,32 @@
 
         </section>
 
+        <section  class="conteudoPrincipal__perfil--inativo" id="conteudoPrincipal__perfil">
+
+            <img class="conteudoPrincipal__perfil__img" src="assets/img/perfil__foto.png"/>
+            <p class="conteudoPrincipal__perfil__titulo">Maria Silva</p>
+            <p class="conteudoPrincipal__perfil__subtitulo__menor">Meu número:</p>
+            <p class="conteudoPrincipal__perfil__subtitulo__maior">(51) 98888-9999</p>
+            <p class="conteudoPrincipal__perfil__subtitulo__menor">Meu e-mail:</p>
+            <p class="conteudoPrincipal__perfil__subtitulo__maior">maria.silva@gmail.com</p>
+        
+        </section>
+
     </section>
 
     <!--MENU DE NAVEGAÇÃO-->
     <section class="menuDeNavegacao">
         <nav class="menuDeNavegacao__barra">
             <ul class="menuDeNavegacao__barra__lista">
-                <li ><a class="menuDeNavegacao__barra__lista__item ativo" href="index.html"><span class="material-icons">&#xE88A;</span><br>Início</a></li>
-                <li ><a class="menuDeNavegacao__barra__lista__item" href="perfil.html"><span class="material-icons">&#xE7fd;</span><br>Perfil</a></li>
-                <li ><a class="menuDeNavegacao__barra__lista__item" href="perfil.html"><span class="material-icons">&#xE8b6;</span><br>Procurar</a></li>
-                <li ><a class="menuDeNavegacao__barra__lista__item" href="perfil.html"><span class="material-icons">&#xE887;</span><br>Como usar?</a></li>
+                <li ><button id="btn__inicio" class="menuDeNavegacao__barra__lista__item btn__inicio--inativo"><span class="material-icons">&#xE88A;</span><br>Início</button></li>
+                <li ><button id="btn__perfil" class="menuDeNavegacao__barra__lista__item btn__perfil--inativo"><span class="material-icons">&#xE7fd;</span><br>Perfil</button></li>
+                <li ><button id="btn__procurar" class="menuDeNavegacao__barra__lista__item btn__procurar--inativo"><span class="material-icons">&#xE8b6;</span><br>Procurar</button></li>
+                <li ><button id="btn__comoUsar" class="menuDeNavegacao__barra__lista__item btn__comoUsar--inativo"><span class="material-icons">&#xE887;</span><br>Como usar?</button></li>
             </ul>
         </nav>        
     </section>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/cabecalho__menu__btn.js"></script>
 </body>
 
 </html>

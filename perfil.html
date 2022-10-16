@@ -22,6 +22,7 @@
     <link href="assets/css/conteudoPrincipal.css" rel="stylesheet">
     <link href="assets/css/conteudoPrincipal/conteudoPrincipal__apps.css" rel="stylesheet">
     <link href="assets/css/conteudoPrincipal/conteudoPrincipal__sites.css" rel="stylesheet">
+    <link href="assets/css/conteudoPrincipal/conteudoPrincipal__perfil.css" rel="stylesheet">
     <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento.css" rel="stylesheet">
     <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link.css" rel="stylesheet">
     <link href="assets/css/conteudoPrincipal/conteudoPrincipal__elemento__link__img.css" rel="stylesheet">
@@ -39,30 +40,60 @@
     <header class="cabecalho">
         <div class="cabecalho__titulo">
             <h1>Central<strong id="caixa">&nbspCAIXA</strong></h1>
-            
-        </div> 
-        <h2 class="cabecalho__menu__secundario">Meu Perfil</h2>
+        </div>
+        <div class="cabecalho__menu cabecalho__menu__perfil--inativo">
+            <h2 class="cabecalho__menu__secundario">Meu Perfil</h2>
+        </div>
     </header>
 
     <!--CONTEÚDO PRINCIPAL-->
     <section class="conteudoPrincipal">
-        <h2><a href="index.html"><span class="material-icons">&#xEa3c;</span><br>Em construção</a></h2>
-    </section>
+        <section  class="conteudoPrincipal__perfil--ativo" id="conteudoPrincipal__perfil">
 
+            <img class="conteudoPrincipal__perfil__img" src="assets/img/perfil__foto.png"/>
+            <p class="conteudoPrincipal__perfil__titulo">Maria Silva</p>
+            <p class="conteudoPrincipal__perfil__subtitulo__menor">Meu número:</p>
+            <p class="conteudoPrincipal__perfil__subtitulo__maior">(51) 98888-9999</p>
+            <p class="conteudoPrincipal__perfil__subtitulo__menor">Meu e-mail:</p>
+            <p class="conteudoPrincipal__perfil__subtitulo__maior">mariasilva@gmail.com</p>
+        
+        </section>
+    </section>
+            
+            <!--<div class="conteudoPrincipal__elemento">
+                <h2><a href="index.html"><span class="material-icons">&#xEa3c;</span><br>Em construção</a></h2>
+                -->
+                <!--<a class="conteudoPrincipal__elemento__link" href="index.html">
+                    <img class="conteudoPrincipal__elemento__link__img" src="assets/img/apps/app_1caixa.png"/>
+                    <h3 class="conteudoPrincipal__elemento__link__txt">Início</h3>
+                </a>
+            </div>-->
+        
+<!--TESTAR ABERTURA DE FACEBOOK
+    <a href="intent://profile/100030940759382#Intent;package=com.facebook.katana;scheme=fb;end">Facebook</a> 
+-->
+
+<!--FUNCIONOU PARA REDIRECIONAR: TESTAR ABRIR APP
+    <script>
+        window.location.replace("caixa://home/"); setTimeout(function () {
+        window.location.replace("https://play.google.com/store/apps/details?id=br.gov.caixa.tem"); }, 2000);
+    </script>
+-->            
+    
     <!--MENU DE NAVEGAÇÃO-->
     <section class="menuDeNavegacao">
         <nav class="menuDeNavegacao__barra">
             <ul class="menuDeNavegacao__barra__lista">
-                <li ><a class="menuDeNavegacao__barra__lista__item ativo" href="index.html"><span class="material-icons">&#xE88A;</span><br>Início</a></li>
-                <li ><a class="menuDeNavegacao__barra__lista__item" href="perfil.html"><span class="material-icons">&#xE7fd;</span><br>Perfil</a></li>
-                <li ><a class="menuDeNavegacao__barra__lista__item" href="perfil.html"><span class="material-icons">&#xE8b6;</span><br>Procurar</a></li>
-                <li ><a class="menuDeNavegacao__barra__lista__item" href="perfil.html"><span class="material-icons">&#xE887;</span><br>Como usar?</a></li>
+                <li ><button id="btn__inicio" class="menuDeNavegacao__barra__lista__item ativo"><span class="material-icons">&#xE88A;</span><br>Início</button></li>
+                <li ><button id="btn__perfil" class="menuDeNavegacao__barra__lista__item"><span class="material-icons">&#xE7fd;</span><br>Perfil</button></li>
+                <li ><button id="btn__procurar" class="menuDeNavegacao__barra__lista__item"><span class="material-icons">&#xE8b6;</span><br>Procurar</button></li>
+                <li ><button id="btn__comoUsar" class="menuDeNavegacao__barra__lista__item"><span class="material-icons">&#xE887;</span><br>Como usar?</button></li>
             </ul>
         </nav>        
     </section>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/cabecalho__menu__btn.js"></script>
+    <script src="assets/js/botoes.js"></script>
 </body>
 
 </html>

@@ -1,57 +1,141 @@
-/*SAÍDAS DE DADOS*/
-
-/*alert('Teste 1'); /*inserindo alerta*/
-
-/*document.getElementById("tag id").innerHTML="Teste 2"; /*inserindo HTML*/
-
-/*document.write('Teste 3'); /*mais utilizado para testes*/
-
-/*console.log('Teste 4'); /*aparece internamente para codificador*/
-
-/*let a,b,c; a=5; b=6; c=8;*//*declaração de variável*/
-
-/*function minhafuncao(){document.write(5 + 5);}*/
-/*declarações em bloco de códigos*/
-
-/*SINTAXE*/
-
-/*tipos de dados=dentro de aspas duplas "" entendido como texto=string
-"case sensitive"
+/*LÓGICA PARA BOTÕES: tentar implementar a lógica:
+      Função BOTOES
+        Se clicar BOTÃOVOLTAR
+          chamar FUNÇÃO VOLTAR ou
+        Se clicar BOTÃOAPP
+          chamar EXIBIRAPP ou
+        Se clicar BOTÃOAPP
+          chamar EXIBIRAPP;
 */
 
+/*BOTÃO VOLTAR*/
+const btn__apps__voltar = document.getElementById("btn__voltar");
+btn__apps__voltar.addEventListener("onclick", function() {
+  history.go(-1);
+});
 
-/*variáveis= var let const
+/*BOTÃO APPS*/
+const chamar__app = document.getElementById("btn__apps");
+chamar__app.addEventListener("click", function() {
+  if (document.querySelector('#btn__apps').classList.contains("cabecalho__menu__btn__apps--inativo")) {
+    /*alterar cabeçalho menu secundário*/
+    document.querySelector('#btn__apps').classList.remove("cabecalho__menu__btn__apps--inativo");
+    document.querySelector('#btn__apps').classList.add("cabecalho__menu__btn__apps--ativo");
+    document.querySelector('#btn__sites').classList.remove("cabecalho__menu__btn__sites--ativo");
+    document.querySelector('#btn__sites').classList.add("cabecalho__menu__btn__sites--inativo");
+    document.querySelector('#cabecalho__menu__inicio').classList.remove("cabecalho__menu__inicio--inativo");
+    document.querySelector('#cabecalho__menu__inicio').classList.add("cabecalho__menu__inicio--ativo");
+    document.querySelector('#cabecalho__menu__secundario__perfil').classList.remove("cabecalho__menu__secundario__perfil--ativo");
+    document.querySelector('#cabecalho__menu__secundario__perfil').classList.add("cabecalho__menu__secundario__perfil--inativo");
+    document.querySelector('#btn__perfil').classList.remove("btn__perfil--ativo");
+    document.querySelector('#btn__perfil').classList.add("btn__perfil--inativo");
+   
+    /*alterar conteúdo principal*/
+    document.querySelector('#conteudoPrincipal__apps').classList.remove("conteudoPrincipal__apps--inativo");
+    document.querySelector('#conteudoPrincipal__apps').classList.add("conteudoPrincipal__apps--ativo");
+    document.querySelector('#conteudoPrincipal__sites').classList.remove("conteudoPrincipal__sites--ativo");
+    document.querySelector('#conteudoPrincipal__sites').classList.add("conteudoPrincipal__sites--inativo");
+    document.querySelector('#conteudoPrincipal__perfil').classList.remove("conteudoPrincipal__perfil--ativo");
+    document.querySelector('#conteudoPrincipal__perfil').classList.add("conteudoPrincipal__perfil--inativo");
+    
+    /*adicionar ou remover botão voltar*/
+    document.querySelector('#btn__voltar').classList.remove("cabecalho__menu__btn__voltar--ativo");
+    document.querySelector('#btn__voltar').classList.add("cabecalho__menu__btn__voltar--inativo");
+  }});
 
-var a = 1;
-var b = 5;
-var primeiroResultado = a + b;
-console.log(primeiroResultado);
+/*BOTÃO SITES*/
+const btn__sites__variavel = document.getElementById("btn__sites");
 
-let = não permite re-declarar=alterar, mas funciona com valor diferente dentro de um escopo (bloco);
+btn__sites__variavel.addEventListener("click", function() {
+  if (document.querySelector('#btn__sites').classList.contains("cabecalho__menu__btn__sites--inativo")) {
+    /*alterar cabeçalho menu secundário*/
+    document.querySelector('#btn__apps').classList.remove("cabecalho__menu__btn__apps--ativo");
+    document.querySelector('#btn__apps').classList.add("cabecalho__menu__btn__apps--inativo");
+    document.querySelector('#btn__sites').classList.remove("cabecalho__menu__btn__sites--inativo");
+    document.querySelector('#btn__sites').classList.add("cabecalho__menu__btn__sites--ativo");
+    /*alterar conteúdo principal*/
+    document.querySelector('#conteudoPrincipal__apps').classList.remove("conteudoPrincipal__apps--ativo");
+    document.querySelector('#conteudoPrincipal__apps').classList.add("conteudoPrincipal__apps--inativo");
+    document.querySelector('#conteudoPrincipal__sites').classList.remove("conteudoPrincipal__sites--inativo");
+    document.querySelector('#conteudoPrincipal__sites').classList.add("conteudoPrincipal__sites--ativo");
+  }});
 
+/*BOTÃO INICIO*/
+const chamar__inicio = document.getElementById("btn__inicio");
+chamar__inicio.addEventListener("click", function() {
+  if (document.querySelector('#btn__inicio').classList.contains("btn__inicio--inativo")) {
+    /*alterar cabeçalho menu secundário*/
+    document.querySelector('#btn__apps').classList.remove("cabecalho__menu__btn__apps--inativo");
+    document.querySelector('#btn__apps').classList.add("cabecalho__menu__btn__apps--ativo");
+    document.querySelector('#btn__sites').classList.remove("cabecalho__menu__btn__sites--ativo");
+    document.querySelector('#btn__sites').classList.add("cabecalho__menu__btn__sites--inativo");
+    document.querySelector('#cabecalho__menu__inicio').classList.remove("cabecalho__menu__inicio--inativo");
+    document.querySelector('#cabecalho__menu__inicio').classList.add("cabecalho__menu__inicio--ativo");
+    document.querySelector('#cabecalho__menu__secundario__perfil').classList.remove("cabecalho__menu__secundario__perfil--ativo");
+    document.querySelector('#cabecalho__menu__secundario__perfil').classList.add("cabecalho__menu__secundario__perfil--inativo");
+    document.querySelector('#btn__perfil').classList.remove("btn__perfil--ativo");
+    document.querySelector('#btn__perfil').classList.add("btn__perfil--inativo");
 
+    /*alterar conteúdo principal*/
+    document.querySelector('#conteudoPrincipal__apps').classList.remove("conteudoPrincipal__apps--inativo");
+    document.querySelector('#conteudoPrincipal__apps').classList.add("conteudoPrincipal__apps--ativo");
+    document.querySelector('#conteudoPrincipal__sites').classList.remove("conteudoPrincipal__sites--ativo");
+    document.querySelector('#conteudoPrincipal__sites').classList.add("conteudoPrincipal__sites--inativo");
+    document.querySelector('#conteudoPrincipal__perfil').classList.remove("conteudoPrincipal__perfil--ativo");
+    document.querySelector('#conteudoPrincipal__perfil').classList.add("conteudoPrincipal__perfil--inativo");
+        
+    /*adicionar ou remover botão voltar*/
+    document.querySelector('#btn__voltar').classList.remove("cabecalho__menu__btn__voltar--ativo");
+    document.querySelector('#btn__voltar').classList.add("cabecalho__menu__btn__voltar--inativo");
+  }});
 
-*/
+/*BOTÃO PERFIL*/
+const chamar__perfil = document.getElementById("btn__perfil");
+chamar__perfil.addEventListener("click", function () {
+  if (document.querySelector('#btn__perfil').classList.contains("btn__perfil--inativo")) {
+        /*alterar cabeçalho menu secundário e menuDeNavegacao*/
+        document.querySelector('#cabecalho__menu__inicio').classList.remove("cabecalho__menu__inicio--ativo");
+        document.querySelector('#cabecalho__menu__inicio').classList.add("cabecalho__menu__inicio--inativo");
+        document.querySelector('#cabecalho__menu__secundario__perfil').classList.remove("cabecalho__menu__secundario__perfil--inativo");
+        document.querySelector('#cabecalho__menu__secundario__perfil').classList.add("cabecalho__menu__secundario__perfil--ativo");
+        document.querySelector('#btn__perfil').classList.remove("btn__perfil--inativo");
+        document.querySelector('#btn__perfil').classList.add("btn__perfil--ativo");
+        
+        /*alterar conteúdo principal*/
+        document.querySelector('#conteudoPrincipal__apps').classList.remove("conteudoPrincipal__apps--ativo");
+        document.querySelector('#conteudoPrincipal__apps').classList.add("conteudoPrincipal__apps--inativo");
+        document.querySelector('#conteudoPrincipal__sites').classList.remove("conteudoPrincipal__sites--ativo");
+        document.querySelector('#conteudoPrincipal__sites').classList.add("conteudoPrincipal__sites--inativo");
+        document.querySelector('#conteudoPrincipal__perfil').classList.remove("conteudoPrincipal__perfil--inativo");
+        document.querySelector('#conteudoPrincipal__perfil').classList.add("conteudoPrincipal__perfil--ativo");
+        
+        /*adicionar ou remover botão voltar*/
+        document.querySelector('#btn__voltar').classList.remove("cabecalho__menu__btn__voltar--inativo");
+        document.querySelector('#btn__voltar').classList.add("cabecalho__menu__btn__voltar--ativo");
+      }});
+      
+    
 
-/*
-function nomeDaFuncao (valor1, valor2) {return valor1 + valor 2;}
+/*BOTÃO PROCURAR*/
 
-pode jogar dentro de um HTML:
-document.getElementById("tag id").innerHTML= soma(10, 20);
+const btn__nav__procurar = document.getElementById("btn__procurar");
 
-ou jogar dentro de uma variável:
-var total = soma (10, 23);
+btn__nav__procurar.addEventListener("click", function() {
+  if (document.querySelector('#btn__procurar').classList.contains("cabecalho__menu__btn__voltar--ativo")) {
+    document.querySelector('#btn__procurar').classList.remove("cabecalho__menu__btn__voltar--ativo");
+    document.querySelector('#btn__procurar').classList.add("cabecalho__menu__btn__voltar--inativo");
+     
+  } else {}
+});
 
-OBJETO
-const carro = {
-    marca: "ford", 
-    modelo:"ka", 
-    buzina: function () { alert('biiii")}
-};
+/*BOTÃO COMO USAR*/
 
-EVENTOS:
-ver video:
-https://www.youtube.com/watch?v=rwJ2bwsjGhQ&list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw&index=10
+const btn__nav__comoUsar = document.getElementById("btn__comoUsar");
 
-
-*/
+btn__nav__comoUsar.addEventListener("click", function() {
+  if (document.querySelector('#btn__comoUsar').classList.contains("cabecalho__menu__btn__voltar--ativo")) {
+    document.querySelector('#btn__comoUsar').classList.remove("cabecalho__menu__btn__voltar--ativo");
+    document.querySelector('#btn__comoUsar').classList.add("cabecalho__menu__btn__voltar--inativo");
+     
+  } else {}
+});

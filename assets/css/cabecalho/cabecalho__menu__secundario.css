@@ -1,4 +1,4 @@
-.cabecalho__menu__secundario {
+.cabecalho__menu__secundario__perfil--ativo {
     align-items: center;
     background-color: var(--cor-secundaria-light-azul);
     border: none;
@@ -12,11 +12,16 @@
     padding-left: 24px;
     width: 100%;
 }
+.cabecalho__menu__secundario__perfil--inativo {
+    display: none;
+}
+.cabecalho__menu__inicio--ativo{
+    display: flex;
+}
+.cabecalho__menu__inicio--inativo{
+    display: none;
+}
 
 @media (min-width: 720px) {
 
-.cabecalho__menu__btn {
-        font-size: 28px;
-        height: 80px;
-    }
 }
