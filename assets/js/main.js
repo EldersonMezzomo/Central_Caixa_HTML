@@ -1,16 +1,13 @@
-const abrirApp = document.getElementById("abrirApp");
-  abrirApp.addEventListener("click", function() {window.location.replace("caixa://home/"); setTimeout(function () {window.location.replace("https://play.google.com/store/apps/details?id=br.gov.caixa.tem"); }, 2000);});
-
-  /*FUNCIONOU PARA REDIRECIONAR: TESTAR ABRIR APP
+/*FUNCIONOU PARA REDIRECIONAR: TESTAR ABRIR APP
 <script>
         window.location.replace("caixa://home/"); setTimeout(function () {
         window.location.replace("https://play.google.com/store/apps/details?id=br.gov.caixa.tem"); }, 2000);
     </script>
 
+    const abrirApp = document.getElementById("abrirApp");
+  abrirApp.addEventListener("click", function() {window.location.replace("caixa://home/"); setTimeout(function () {window.location.replace("https://play.google.com/store/apps/details?id=br.gov.caixa.tem"); }, 2000);});
+
 */
-
-
-
 
 /*LÓGICA PARA BOTÕES: tentar implementar a lógica:
       Função BOTOES
